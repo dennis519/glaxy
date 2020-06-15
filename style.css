@@ -1,0 +1,1132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-image: url(https://a-static.besthdwallpaper.com/xing-yun-qiangzhi-tw-1920x1080-186_48.jpg);
+}
+
+.overlay2 {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+  z-index: -4;
+}
+
+.box {
+  width: 180px;
+  height: 150px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.mark {
+  margin-left: 65px;
+  margin-top: 20px;
+  box-shadow: inset 0px 0px 12px gold;
+  width: 80px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0px 0px 15px #FFFF00;
+  color: white;
+  z-index: 2;
+}
+
+.top {
+  background-color: #6d7fc9;
+  width: 250px;
+  font-size: 30px;
+  color: #3d4354;
+  text-align: left;
+}
+
+.bottom {
+  height: 50px;
+}
+
+.middle {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.stars {
+  display: grid;
+  width: 100px;
+  height: 100px;
+  background: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sun {
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(#f5c313, #ec7e08);
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  margin-top: -5px;
+  margin-left: -5px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 90px #f5c91a;
+  -webkit-animation: sunLight 3s infinite alternate;
+          animation: sunLight 3s infinite alternate;
+}
+
+.aqu {
+  padding: 0;
+  margin: 0;
+  left: 27.5%;
+  top: 16%;
+  position: absolute;
+}
+
+.aqutop {
+  margin-left: 50px;
+  display: grid;
+  width: 100px;
+  height: 100px;
+  background: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-mask: url(https://dennis519.github.io/test/Aquarius.svg);
+  -webkit-mask-size: cover;
+  -webkit-mask-position: center;
+  -webkit-animation: fade 600ms infinite;
+          animation: fade 600ms infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.aqutop:hover {
+  background: rgba(54, 117, 181, 0.6);
+  -webkit-transform: scale(1.5) rotate(45deg);
+          transform: scale(1.5) rotate(45deg);
+}
+
+.pis {
+  padding: 0;
+  margin: 0;
+  left: 38.5%;
+  top: 10%;
+  position: absolute;
+}
+
+.pistop {
+  margin-left: 50px;
+  display: grid;
+  width: 100px;
+  height: 100px;
+  background: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-mask: url(https://dennis519.github.io/test/Pisces.svg);
+  -webkit-mask-size: cover;
+  -webkit-mask-position: center;
+  -webkit-animation: fade 600ms infinite;
+          animation: fade 600ms infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.pistop:hover {
+  background: #1251F1;
+  -webkit-transform: scale(1.3) rotate(180deg);
+          transform: scale(1.3) rotate(180deg);
+}
+
+.ari {
+  padding: 0;
+  margin: 0;
+  right: 38.5%;
+  top: 10%;
+  position: absolute;
+}
+
+.aritop {
+  margin-left: 50px;
+  display: grid;
+  width: 100px;
+  height: 100px;
+  background: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-mask: url(https://dennis519.github.io/test/Aries.svg);
+  -webkit-mask-size: cover;
+  -webkit-mask-position: center;
+  -webkit-animation: fade 600ms infinite;
+          animation: fade 600ms infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.aritop:hover {
+  background: #8bd145;
+  -webkit-transform: translate(-50px, -50px) rotatex(15deg);
+          transform: translate(-50px, -50px) rotatex(15deg);
+}
+
+.tau {
+  padding: 0;
+  margin: 0;
+  right: 27.5%;
+  top: 16%;
+  position: absolute;
+}
+
+.tautop {
+  margin-left: 50px;
+  display: grid;
+  width: 100px;
+  height: 100px;
+  background: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-mask: url(https://dennis519.github.io/test/Taurus.svg);
+  -webkit-mask-size: cover;
+  -webkit-mask-position: center;
+  -webkit-animation: fade 600ms infinite;
+          animation: fade 600ms infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.tautop:hover {
+  background: #fac014;
+  -webkit-transform: scale(2) rotate(25deg);
+          transform: scale(2) rotate(25deg);
+}
+
+.gem {
+  padding: 0;
+  margin: 0;
+  right: 18%;
+  top: 30%;
+  position: absolute;
+}
+
+.gemtop {
+  margin-left: 50px;
+  display: grid;
+  width: 100px;
+  height: 100px;
+  background: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-mask: url(https://raw.githubusercontent.com/dennis519/test/582a14c5f61da58b7c3b0a608ce31470b41120e2/Gemini.svg);
+  -webkit-mask-size: cover;
+  -webkit-mask-position: center;
+  -webkit-animation: fade 600ms infinite;
+          animation: fade 600ms infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.gemtop:hover {
+  background: #6d4bad;
+  -webkit-transform: translate(0, -20px);
+          transform: translate(0, -20px);
+}
+
+.can {
+  padding: 0;
+  margin: 0;
+  right: 18%;
+  bottom: 30%;
+  position: absolute;
+}
+
+.cantop {
+  margin-left: 50px;
+  display: grid;
+  width: 100px;
+  height: 100px;
+  background: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-mask: url(https://dennis519.github.io/test/Cancer.svg);
+  -webkit-mask-size: cover;
+  -webkit-mask-position: center;
+  -webkit-animation: fade 600ms infinite;
+          animation: fade 600ms infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.cantop:hover {
+  background: #947a4a;
+  -webkit-transform: translate(-40px, 0px);
+          transform: translate(-40px, 0px);
+}
+
+.leo {
+  padding: 0;
+  margin: 0;
+  right: 27.5%;
+  bottom: 16%;
+  position: absolute;
+}
+
+.leotop {
+  margin-left: 50px;
+  display: grid;
+  width: 100px;
+  height: 100px;
+  background: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-mask: url(https://dennis519.github.io/test/Leo.svg);
+  -webkit-mask-size: cover;
+  -webkit-mask-position: center;
+  -webkit-animation: fade 600ms infinite;
+          animation: fade 600ms infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.leotop:hover {
+  background: #d65420;
+  -webkit-transform: scale(1.5) translate(-30px, -50px) rotatex(15deg);
+          transform: scale(1.5) translate(-30px, -50px) rotatex(15deg);
+}
+
+.vir {
+  padding: 0;
+  margin: 0;
+  right: 38.5%;
+  bottom: 10%;
+  position: absolute;
+}
+
+.virtop {
+  margin-left: 50px;
+  display: grid;
+  width: 100px;
+  height: 100px;
+  background: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-mask: url(https://dennis519.github.io/test/Virgo.svg);
+  -webkit-mask-size: cover;
+  -webkit-mask-position: center;
+  -webkit-animation: fade 600ms infinite;
+          animation: fade 600ms infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.virtop:hover {
+  background: #3b4196;
+  -webkit-transform: scale(1.5) translate(0, -20px);
+          transform: scale(1.5) translate(0, -20px);
+}
+
+.lib {
+  padding: 0;
+  margin: 0;
+  left: 38.5%;
+  bottom: 10%;
+  position: absolute;
+}
+
+.libtop {
+  margin-left: 50px;
+  display: grid;
+  width: 100px;
+  height: 100px;
+  background: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-mask: url(https://raw.githubusercontent.com/dennis519/test/bd8962ce53e1d19fd1453e31d8925b9e9999926e/Lib.svg);
+  -webkit-mask-size: cover;
+  -webkit-mask-position: center;
+  -webkit-animation: fade 600ms infinite;
+          animation: fade 600ms infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+}
+
+.libtop:hover {
+  background: #bab213;
+  -webkit-transform: scale(1.5) translate(0, -20px);
+          transform: scale(1.5) translate(0, -20px);
+}
+
+.sco {
+  padding: 0;
+  margin: 0;
+  left: 27.5%;
+  bottom: 16%;
+  position: absolute;
+}
+
+.scotop {
+  margin-left: 50px;
+  display: grid;
+  width: 100px;
+  height: 100px;
+  background: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-mask: url(https://dennis519.github.io/test/Scorpio.svg);
+  -webkit-mask-size: cover;
+  -webkit-mask-position: center;
+  -webkit-animation: fade 600ms infinite;
+          animation: fade 600ms infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+.scotop:hover {
+  background: #5b5c69;
+  -webkit-transform: scale(1.5) translate(0, -20px) rotate(60deg) translate(-15px, -30px);
+          transform: scale(1.5) translate(0, -20px) rotate(60deg) translate(-15px, -30px);
+}
+
+.sag {
+  padding: 0;
+  margin: 0;
+  left: 18%;
+  bottom: 30%;
+  position: absolute;
+}
+
+.sagtop {
+  z-index: 1;
+  margin-left: 50px;
+  display: grid;
+  width: 100px;
+  height: 100px;
+  background: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-mask: url(https://dennis519.github.io/test/Sagittarius.svg);
+  -webkit-mask-size: cover;
+  -webkit-mask-position: center;
+  -webkit-animation: fade 600ms infinite;
+          animation: fade 600ms infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+
+.sagtop:hover {
+  background: #e39144;
+  -webkit-transform: scale(1.5) rotateY(180deg) rotate(15deg) translate(-15px, -20px);
+          transform: scale(1.5) rotateY(180deg) rotate(15deg) translate(-15px, -20px);
+}
+
+.cap {
+  padding: 0;
+  margin: 0;
+  left: 18%;
+  top: 30%;
+  position: absolute;
+}
+
+.captop {
+  margin-left: 50px;
+  display: grid;
+  width: 100px;
+  height: 100px;
+  background: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-mask: url(https://dennis519.github.io/test/Capricorn.svg);
+  -webkit-mask-size: cover;
+  -webkit-mask-position: center;
+  -webkit-animation: fade 600ms infinite;
+          animation: fade 600ms infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+.captop:hover {
+  background: #2d28b0;
+  -webkit-transform: scale(1.2) rotateX(180deg) rotate(180deg) translate(-15px, -20px);
+          transform: scale(1.2) rotateX(180deg) rotate(180deg) translate(-15px, -20px);
+}
+
+/* actions */
+.read:not(:checked) + .panel,
+.read:not(:checked) + .closeBig {
+  visibility: hidden;
+}
+
+.read:not(:checked) + .panel {
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+}
+
+.read:not(:checked) ~ closeBig {
+  opacity: 0;
+}
+
+.panel {
+  background: #1D1F20;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  height: 100%;
+  width: calc(100% - 80px);
+  max-width: 300px;
+  -webkit-transition: 0.45s all ease;
+  transition: 0.45s all ease;
+}
+
+label {
+  margin-left: 5px;
+  margin-top: 20px;
+  text-shadow: 0px 0px 15px #FFFF00;
+  cursor: pointer;
+}
+
+.closebig {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+.read {
+  display: none;
+  margin-right: 12px;
+}
+
+.panel {
+  color: white;
+  background-color: #1D1F20;
+  box-shadow: 0 0 50px -12px rgba(0, 0, 0, 0.25);
+}
+.panel p {
+  z-index: 1;
+  font-family: 'Playfair Display', serif;
+  margin-top: 20px;
+}
+.panel img {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  margin-left: 30px;
+}
+
+.star {
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #fff;
+  top: 100px;
+  left: 400px;
+  position: relative;
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+  -webkit-animation: star-move 5s infinite ease-out;
+          animation: star-move 5s infinite ease-out;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  opacity: 0;
+}
+
+.star:after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 2px;
+  border: 1px solid #f00;
+  border-width: 1px 150px 1px 150px;
+  border-color: transparent transparent transparent #fff;
+  -webkit-transform: rotate(-45deg) translate3d(1px, -1px, 0);
+          transform: rotate(-45deg) translate3d(1px, -1px, 0);
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+  -webkit-animation: shooting 3s infinite ease-out;
+          animation: shooting 3s infinite ease-out;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+.blue {
+  top: 100px;
+  left: 200px;
+  background: #4dabff;
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+.blue:after {
+  border-color: transparent transparent transparent #4dabff;
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+.y {
+  top: 650px;
+  left: 200px;
+  background: #4dabff;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+.y:after {
+  border-color: transparent transparent transparent #4dabff;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+@-webkit-keyframes shooting {
+  50% {
+    -webkit-transform: scale(1) rotate(-45deg) translate(0px, 0px);
+            transform: scale(1) rotate(-45deg) translate(0px, 0px);
+  }
+  100% {
+    -webkit-transform: scale(0.5) rotate(-45deg) translate(0px, -1px);
+            transform: scale(0.5) rotate(-45deg) translate(0px, -1px);
+  }
+}
+@-webkit-keyframes star-move {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0) rotate(0) translate3d(0, 0, 0);
+            transform: scale(0) rotate(0) translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1) rotate(0) translate3d(-100px, 100px, 0);
+            transform: scale(1) rotate(0) translate3d(-100px, 100px, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1) rotate(0) translate3d(-200px, 200px, 0);
+            transform: scale(1) rotate(0) translate3d(-200px, 200px, 0);
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1.0;
+  }
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1.0;
+  }
+}
+.starx {
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #fff;
+  top: 300px;
+  left: 400px;
+  position: relative;
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+  -webkit-animation: star-move 3s infinite ease-out;
+          animation: star-move 3s infinite ease-out;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  opacity: 0;
+}
+
+.starx:after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 2px;
+  border: 1px solid #f00;
+  border-width: 1px 150px 1px 150px;
+  border-color: transparent transparent transparent #fff;
+  -webkit-transform: rotate(-45deg) translate3d(1px, -1px, 0);
+          transform: rotate(-45deg) translate3d(1px, -1px, 0);
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+  -webkit-animation: shooting 3s infinite ease-out;
+          animation: shooting 3s infinite ease-out;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+@-webkit-keyframes star-movex {
+  0% {
+    -webkit-transform: scale(0) rotate(0) translate3d(0, 0, 0);
+            transform: scale(0) rotate(0) translate3d(0, 0, 0);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1) rotate(0) translate3d(100px, 100px, 0);
+            transform: scale(1) rotate(0) translate3d(100px, 100px, 0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(0) translate3d(200px, 200px, 0);
+            transform: scale(1) rotate(0) translate3d(200px, 200px, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes star-movex {
+  0% {
+    -webkit-transform: scale(0) rotate(0) translate3d(0, 0, 0);
+            transform: scale(0) rotate(0) translate3d(0, 0, 0);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1) rotate(0) translate3d(100px, 100px, 0);
+            transform: scale(1) rotate(0) translate3d(100px, 100px, 0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(0) translate3d(200px, 200px, 0);
+            transform: scale(1) rotate(0) translate3d(200px, 200px, 0);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes star-shootingx {
+  0% {
+    -webkit-transform: scale(0) rotate(-135deg) translate3d(0, 0, 0);
+            transform: scale(0) rotate(-135deg) translate3d(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: scale(1) rotate(-135deg) translate3d(0, 0, 0);
+            transform: scale(1) rotate(-135deg) translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.5) rotate(-135deg) translate3d(0, 0, 0);
+            transform: scale(0.5) rotate(-135deg) translate3d(0, 0, 0);
+  }
+}
+@keyframes star-shootingx {
+  0% {
+    -webkit-transform: scale(0) rotate(-135deg) translate3d(0, 0, 0);
+            transform: scale(0) rotate(-135deg) translate3d(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: scale(1) rotate(-135deg) translate3d(0, 0, 0);
+            transform: scale(1) rotate(-135deg) translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.5) rotate(-135deg) translate3d(0, 0, 0);
+            transform: scale(0.5) rotate(-135deg) translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes sunLight {
+  from {
+    box-shadow: 0 0 15px #ff8c00;
+  }
+  to {
+    box-shadow: 0 0 200px #ffa866;
+  }
+}
+@keyframes sunLight {
+  from {
+    box-shadow: 0 0 15px #ff8c00;
+  }
+  to {
+    box-shadow: 0 0 200px #ffa866;
+  }
+}
+.allbub {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  z-index: -3;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@-webkit-keyframes falling {
+  0%,
+    100% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+}
+@keyframes falling {
+  0%,
+    100% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+}
+.allbub [class*="bub"] {
+  background-color: #fff;
+  width: 5px;
+  height: 5px;
+  border-radius: 15px;
+  -webkit-animation: falling 2s infinite;
+          animation: falling 2s infinite;
+}
+.allbub .bub1 {
+  position: absolute;
+  left: 44.5938364407%;
+  top: 73.5470923278%;
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+}
+.allbub .bub2 {
+  position: absolute;
+  left: 77.9984090506%;
+  top: 13.0347535435%;
+  -webkit-animation-delay: -1.6s;
+          animation-delay: -1.6s;
+}
+.allbub .bub3 {
+  position: absolute;
+  left: 62.4384577582%;
+  top: 7.9700518467%;
+  -webkit-animation-delay: -2.4s;
+          animation-delay: -2.4s;
+}
+.allbub .bub4 {
+  position: absolute;
+  left: 64.8220948411%;
+  top: 55.8564265732%;
+  -webkit-animation-delay: -3.2s;
+          animation-delay: -3.2s;
+}
+.allbub .bub5 {
+  position: absolute;
+  left: 51.7294003213%;
+  top: 17.6954598002%;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+}
+.allbub .bub6 {
+  position: absolute;
+  left: 83.5034070817%;
+  top: 10.3014152266%;
+  -webkit-animation-delay: -4.8s;
+          animation-delay: -4.8s;
+}
+.allbub .bub7 {
+  position: absolute;
+  left: 33.7706469602%;
+  top: 15.6951007268%;
+  -webkit-animation-delay: -5.6s;
+          animation-delay: -5.6s;
+}
+.allbub .bub8 {
+  position: absolute;
+  left: 32.0744247959%;
+  top: 79.8900391438%;
+  -webkit-animation-delay: -6.4s;
+          animation-delay: -6.4s;
+}
+.allbub .bub9 {
+  position: absolute;
+  left: 43.5446329175%;
+  top: 58.5830443338%;
+  -webkit-animation-delay: -7.2s;
+          animation-delay: -7.2s;
+}
+.allbub .bub10 {
+  position: absolute;
+  left: 22.3272894271%;
+  top: 24.5830640078%;
+  -webkit-animation-delay: -8s;
+          animation-delay: -8s;
+}
+.allbub .bub11 {
+  position: absolute;
+  left: 65.5138294886%;
+  top: 23.3527523775%;
+  -webkit-animation-delay: -8.8s;
+          animation-delay: -8.8s;
+}
+.allbub .bub12 {
+  position: absolute;
+  left: 18.2294123673%;
+  top: 53.5078567774%;
+  -webkit-animation-delay: -9.6s;
+          animation-delay: -9.6s;
+}
+.allbub .bub13 {
+  position: absolute;
+  left: 68.9812421067%;
+  top: 28.7231534504%;
+  -webkit-animation-delay: -10.4s;
+          animation-delay: -10.4s;
+}
+.allbub .bub14 {
+  position: absolute;
+  left: 34.063450573%;
+  top: 72.8064108308%;
+  -webkit-animation-delay: -11.2s;
+          animation-delay: -11.2s;
+}
+.allbub .bub15 {
+  position: absolute;
+  left: 58.6973418923%;
+  top: 40.3922442408%;
+  -webkit-animation-delay: -12s;
+          animation-delay: -12s;
+}
+.allbub .bub16 {
+  position: absolute;
+  left: 21.0701179826%;
+  top: 36.4905410783%;
+  -webkit-animation-delay: -12.8s;
+          animation-delay: -12.8s;
+}
+.allbub .bub17 {
+  position: absolute;
+  left: 68.8630549754%;
+  top: 58.6833102105%;
+  -webkit-animation-delay: -13.6s;
+          animation-delay: -13.6s;
+}
+.allbub .bub18 {
+  position: absolute;
+  left: 40.5229030499%;
+  top: 50.6721346343%;
+  -webkit-animation-delay: -14.4s;
+          animation-delay: -14.4s;
+}
+.allbub .bub19 {
+  position: absolute;
+  left: 3.0791229594%;
+  top: 60.0940929709%;
+  -webkit-animation-delay: -15.2s;
+          animation-delay: -15.2s;
+}
+.allbub .bub20 {
+  position: absolute;
+  left: 9.9976925854%;
+  top: 43.9758390745%;
+  -webkit-animation-delay: -16s;
+          animation-delay: -16s;
+}
+.allbub .bub21 {
+  position: absolute;
+  left: 54.2095449365%;
+  top: 69.0285612392%;
+  -webkit-animation-delay: -16.8s;
+          animation-delay: -16.8s;
+}
+.allbub .bub22 {
+  position: absolute;
+  left: 18.4521473459%;
+  top: 17.1614727085%;
+  -webkit-animation-delay: -17.6s;
+          animation-delay: -17.6s;
+}
+.allbub .bub23 {
+  position: absolute;
+  left: 34.2260369392%;
+  top: 41.8190790277%;
+  -webkit-animation-delay: -18.4s;
+          animation-delay: -18.4s;
+}
+.allbub .bub24 {
+  position: absolute;
+  left: 15.2165805232%;
+  top: 45.7314024012%;
+  -webkit-animation-delay: -19.2s;
+          animation-delay: -19.2s;
+}
+.allbub .bub25 {
+  position: absolute;
+  left: 5.2393128996%;
+  top: 63.2422383918%;
+  -webkit-animation-delay: -20s;
+          animation-delay: -20s;
+}
+.allbub .bub26 {
+  position: absolute;
+  left: 60.7435737375%;
+  top: 41.2293268606%;
+  -webkit-animation-delay: -20.8s;
+          animation-delay: -20.8s;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.row {
+  margin-top: 20px;
+  margin-left: -25px;
+  max-width: 500px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.card {
+  float: left;
+  padding: 0 1.7rem;
+  width: 50%;
+}
+.card .menu-content {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.card .menu-content::before, .card .menu-content::after {
+  content: '';
+  display: table;
+}
+.card .menu-content::after {
+  clear: both;
+}
+.card .menu-content li {
+  display: inline-block;
+}
+.card .menu-content a {
+  color: #fff;
+}
+.card .menu-content span {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: 'Open Sans';
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+.card .wrapper {
+  min-height: 250px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+.card .wrapper:hover .data {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.card .data {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  -webkit-transform: translateY(calc(180px + 1em));
+          transform: translateY(calc(180px + 1em));
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.card .data .content {
+  color: #FFFFFF;
+  background-color: #1D1F20;
+  padding: 0.5em;
+  position: relative;
+  z-index: 1;
+}
+.card .Hi {
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.card .title {
+  margin-top: 30px;
+}
+.card .text {
+  height: 50px;
+  margin: 0;
+}
+
+.example-1 .wrapper {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSZlwLOUxDr_XdOJN6y41DOvK_jFPps4Ee3w_XFoPokm4iYut8M&usqp=CAU) 50% 2%/cover no-repeat;
+}
+.example-1 .date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #77d7b9;
+  color: #fff;
+  padding: 0.8em;
+}
+.example-1 .date span {
+  display: block;
+  text-align: center;
+}
+.example-1 .date .day {
+  font-weight: 700;
+  font-size: 24px;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.18);
+}
+.example-1 .date .month {
+  text-transform: uppercase;
+}
+.example-1 .date .month,
+.example-1 .date .year {
+  font-size: 12px;
+}
+.example-1 .content {
+  background-color: #fff;
+  box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
+}
+.example-1 .title a {
+  color: gray;
+}
